@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Hero Courses</title>
+  <style>
+   
+
+    * {
+  margin:0;
+  padding:0;
+ 
+}
+
+
+body {
+ background-color: white;
+  color:#000;
+  width: 100%;
+  align-items: self-end;
+  justify-content: end;
+
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:1.3rem 2.5rem;
+  border-bottom:1px solid #eee;
+  background-color: white;
+  background-attachment: fixed;
+  position: fixed;
+  width: 100%;
+  z-index:1000;
+  
+}
+
+.nav .links{
+  display:flex;
+  gap:2rem;
+  list-style:none;
+  
+}
+
+.primary-button{
+  background:black;
+  color:white;
+  padding:0.7rem 1.6rem;
+  border-radius:8px;
+  border:none;
+  font-weight:600;
+  margin-right: 100px;
+}
+
+.hero{
+  display:flex;
+  justify-content:space-between;
+  min-height:90vh;
+  padding:4rem 2.5rem;
+  margin-top: 0;
+}
+
+.hero-left{
+  max-width:50%;
+  padding-right:4rem;
+}
+
+.hero-left h1{
+  font-size:58px;
+  font-weight:800;
+  line-height:1.05;
+  margin-bottom:1.6rem;
+}
+
+.hero-left p{
+  font-size:22px;
+  line-height:1.5;
+  margin-bottom:2rem;
+}
+
+.actions{
+  display:flex;
+  gap:1rem;
+  margin-bottom:3rem;
+}
+
+.btn-dark{
+  background:black;
+  color:white;
+  padding:0.9rem 1.7rem;
+  border-radius:8px;
+  border:none;
+  font-weight:600;
+}
+
+.btn-light{
+  
+  color:black;
+  
+  padding:0.9rem 1.7rem;
+  
+  font-weight:600;
+}
+
+.hero-right img{
+  width:500px;
+  height:auto;
+  object-fit:cover;
+}
+
+.logos{
+  display:flex;
+  gap:3rem;
+  align-items:center;
+  opacity:0.65;
+}
+
+.logos img{
+  height:42px;
+
+}
+
+.pic{
+  margin-top:0;
+  margin: 0%;
+  padding: 0px;
+  box-sizing: border-box;
+  margin-left: 600px;
+}
+
+.pic{
+  margin-left:0;
+  padding: 0;
+}
+.box1{
+  height: 100px;
+  width:200 ;
+  border: 10;
+  background-color: white;
+  margin-left: 150px;
+}
+.box2{
+  height: 100px;
+  width:200 ;
+  border: 10;
+  background-color: white;
+  margin-left: 150px;
+}
+.box3{
+  height: 100px;
+  width:200 ;
+  border: 10;
+  background-color: white;
+  margin-left: 150px;
+}
+.box4{
+  height: 100px;
+  width:200 ;
+  border: 10;
+  background-color: white;
+  margin-left: 100px;
+}
+.box{
+  display: flex;
+  justify-content: space-around;
+  row-gap: 40px;
+
+}
+
+.parent{
+  display:grid;
+  height: 100vh;
+  border-radius: 15px;
+  gap:10px;
+  grid-template-columns: repeat(3,1fr);
+  width:1000px;
+  margin-left: 200px;
+}
+.child1{
+  background-color: #000;
+ color: #eee;
+ grid-columns:1/3 ;
+ grid-row:1/2 ;
+ border-radius: 20px;
+ height: 250px;
+ 
+}
+.child2{
+  background-color: #000;
+ color: #eee;
+ grid-column: 2;
+ grid-row: 1;
+ border-radius: 20px;
+ height: 250px;
+}
+.child3{
+  background-color: #000;
+ color: #eee;
+ grid-column: 3;
+ grid-row: 1;
+ border-radius: 20px;
+ height: 250px;
+ width:350px;
+ 
+
+}
+.child4{
+  background-color: #000;
+ color: #eee;
+ grid-column: 2;
+ grid-row:2 ;
+ border-radius: 20px;
+ height: 250px;
+ margin-left:-200px ;
+ margin-right: 180px;
+}
+.child5{
+  background-color: #000;
+ color: #eee;
+ grid-column: 3;
+ grid-row: 2;
+ border-radius: 20px;
+ height: 250px;
+ margin-top: 0px;
+ gap:10px;
+ margin-left:-150px ;
+ margin-right: 150px;
+}
+
+.text3{
+  margin-top: 150px;
+  margin-bottom: 150px;
+
+}
+.cards{
+  display:grid;
+  height: 400px;
+  border-radius: 15px;
+  gap:10px;
+  grid-template-columns: repeat(3,1fr);
+  margin-left: 100px;
+  box-shadow: #000;
+
+}
+.card1{
+  box-shadow: #000;
+  border-radius: 10px;
+  grid-column: 1;
+  grid-row: 1;
+}
+.card2{
+  box-shadow: #000;
+  border-radius: 10px;
+   grid-column: 2;
+  grid-row: 1;
+
+}
+.card3{
+  box-shadow: #000;
+  border-radius: 10px;
+   grid-column: 3;
+  grid-row: 1;
+
+}
+.card4{
+  box-shadow: #000;
+  border-radius: 10px;
+   grid-column: 1;
+  grid-row: 2;
+
+}
+.card5{
+  box-shadow: #000;
+  border-radius: 10px;
+   grid-column: 2;
+  grid-row: 2;
+
+}
+.card6{
+  box-shadow: #000;
+  border-radius: 10px;
+   grid-column: 3;
+  grid-row: 2;
+
+}
+.left img{
+display: flex;
+
+  
+}
+.left{
+  position: relative;
+  margin-left: 700px;
+  height: 600px;
+  width:400px;
+  border-color: #000;
+  box-shadow: #eee;
+  border-radius: 20px;
+  margin-top: -400px;
+}
+.otto1 .otto{
+  display: flex;
+}
+
+
+.im{
+   display:grid;
+  height: 400px;
+  border-radius: 15px;
+  gap:10px;
+  grid-template-columns: repeat(4,1fr);
+  margin-left: 50px;
+}
+.rating{
+  display:grid;
+  height: 400px;
+  border-radius: 15px;
+  gap:10px;
+  grid-template-columns: repeat(3,2fr);
+  
+
+}
+.logo{
+   display:flex;
+  gap:3rem;
+  align-items:center;
+  opacity:0.65;
+}
+.last{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <section class="back">
+    <nav class="nav">
+     <h1>Material Tailwind</h1>
+      <div class="links">
+        <i class="bi bi-file-break-fill"></i>
+        <p>Page</p>
+         <i class="bi bi-person-circle"></i>
+        <p>Account</p>
+        <i class="bi bi-file-earmark-minus-fill"></i>
+        <p>Docs</p>
+      </div>
+
+      <button class="primary-button">BLOCKS</button>
+    </nav>
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Unlock the Power of the Web with Our Expert Courses</h1>
+
+        <p>Are you ready to embark on an exciting journey into the world of web development? Look no further! We are your trusted partner for mastering the art of web development.</p>
+
+        <div class="actions">
+          <button class="btn-dark">VIEW ALL COURSES</button>
+          <button class="btn-light">SEE PRICING</button>
+        </div>
+
+        <div class="logos">
+          <img src="logo-netflix.svg">
+          <img src="logo-pinterest.svg">
+          <img src="logo-coinbase.svg">
+          <img src="Google_2015_logo.svg">
+          
+        </div>
+
+      </div>
+      <div class="pic" style="margin-top: -60px;">
+        <img src="./image.svg" alt="">
+      </div>
+
+    
+    </section>
+    
+   
+  
+  <section class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto text-center px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" style="align-items: center;align-content: center; margin-left: 500px;">
+            Explore Our Impressive Stats
+        </h2>
+        <p style="color: gray; margin-left: 480px;" >We take pride in our commitment to excellence and</p>
+        <p style="color: gray; margin-left: 540px"> our dedication to your success. </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="box" >
+    <div class="box1">
+    <i class="bi bi-file-earmark-text-fill text=font-bold" style="margin-left: 40px;"></i>
+    <h1>10,200+</h1>
+    <p style="color: gray;margin-left: 20px;">Student</p>
+    </div>
+    <div class="box2" style="gap:50px">
+    <i class="bi bi-play-circle-fill" style="margin-left: 40px;"></i>
+    <h1 style="margin-left: 25px;">50+</h1>
+    <p style="color: gray;margin-left: 25px;">Instructor</p>
+    </div>
+    <div class="box3">
+    <i  class="bi bi-pencil-square" style="margin-left: 40px;"></i>
+    <h1 style="margin-left:20px;">10+</h1>
+    <p style="color: gray;margin-left: 25px;">Courses</p>
+    </div>
+    <div class="box4">
+    <i class="bi bi-telephone-inbound-fill"style="margin-left: 40px;"></i>
+    <h1 style="margin-left: 20px;">24/7</h1>
+    <p style="color: gray;margin-left: 30px;">Support</p>
+    </div>
+  </div>
+  <div class="text1" style="margin-top: 50px;">
+    <h1 style="margin-left: 550px;">Courses Categories</h1>
+    <p style="color: gray; margin-left: 500px;" >A comprehensive selection of courses designed to empower</p>
+    <p style="color: gray; margin-left: 500px;" >you with the skills you need to thrive in the dynamic world of</p>
+    <p style="color: gray; margin-left: 610px;" >web development.</p>
+  </div><br>
+  <br>
+  <div class="parent" >
+    <div class="child1"><br><br><br>
+
+      <h4 style="color: gray;margin-left: 70px; margin-top: 0px;">HTML,CSS & Javascript</h4><br> 
+      <h2 style="margin-left: 40px;">Web Development Intro</h2><br>
+      <p style="color:gray;margin-left: 40px;">Ready to start your web development</p>
+      <p style="color:gray;margin-left: 120px;">journey?</p><br><br>
+      <button style="margin-left: 100px; ">ENROLL NOW</button>
+    </div>
+    <div class="child2"><br><br>
+      <i class="bi bi-heart" style="margin-left: 40px;"></i><br><br><br>
+      <h2 style="margin-left: 25px; margin-top: 50px;">Fronted Web Development</h2><br>
+      <p style="color: gray;margin-left: 25px;">300 courses</p>
+    </div>
+    <div class="child3"><br><br>
+      <i class="bi bi-globe-americas" style="margin-left: 30px;"></i><br>
+      <h2 style="margin-left: 25px; margin-top: 85px;">Web Security & Performance</h2><br>
+      <p style="color: gray;margin-left: 25px;">240 courses</p>
+    </div>
+    <div class="child4" ><br>
+      <i class="bi bi-puzzle"style="margin-left: 30px;"></i>
+      <h2 style="margin-left: 20px; margin-top: 85px;">Backend Web Development</h2><br>
+      <p style="color: gray;margin-left: 25px;">200 Courses</p>
+    </div>
+    <div class="child5"><br>
+      <i class="bi bi-mic" style="margin-left: 30px;"></i>
+      <h2 style="margin-left: 20px; margin-top: 85px;">Full-Stack Web Development</h2><br>
+      <p style="color: gray;margin-left: 25px;">100 Courses</p>
+    </div>
+  </div>
+
+  <div class="text3" >
+    <h1  style="margin-left: 550px;">Explore Courses</h1>
+    <p style="color: gray; margin-left: 500px;">Browse through 1,000+ web development courses and</p>
+    <p style="color: gray; margin-left: 570px;">find the one that fits your needs.</p>
+  </div><br><br><br>
+
+  <div class="cards" style="margin-top: -150px;">
+    <div class="card1" style="margin-left: 50px;">
+      <img src="./img1.svg" alt=""><br><br>
+      <p style="color: gray;">Beginner • 25 Classes • 200 Students</p><br>
+      <h2>Unlock the Web Foundation</h2><br>
+      <p  style="color: gray;">Dive into HTML to structure your content <br><br>and CSS to style it. By the end, you'll be <br><br> crafting beautiful web pages from <br>scratch.</p>
+      <button style="background-color: #000;color: #eee;">FROM $99</button>
+    </div>
+    <div class="card2">
+      <img src="./img2.svg" alt=""><br>
+      <p  style="color: gray;">Medium • 10 Classes • 150 Students</p><br>
+      <h2>Craft Websites That Adapt</h2><br>
+      <p  style="color: gray;">Our Responsive Design course teaches <br><br> you the art of creating websites that <br><br>seamlessly adapt to different devices <br><br> and screen sizes.</p><br>
+      <button style="background-color: #000;color: #eee;">FROM $199</button>
+    </div><br><br>
+    <div class="card3">
+      <img src="./img3.svg" alt="">
+      <p  style="color: gray;">Medium • 23 Classes • 590 Students</p><br>
+      <h2>Master the Power of React</h2><br>
+      <p  style="color: gray;">Take your frontend development to the <br><br> next level with our React Development <br><br> course. Learn how to build interactive, <br><br>dynamic web applications.</p><br>
+      <button style="background-color: #000;color: #eee;">FROM $499</button>
+    </div><br><br>
+    <div class="card4">
+      <img src="./img4.svg" alt="">
+      <p  style="color: gray;">Beginner • 35 Classes • 400 Students</p>
+      <h2>Frontend Essentials Course</h2>
+      <p  style="color: gray;">For aspiring web developers, the <br><br>Frontend Essentials course is a must. <br><br> Dive into the core technologies - HTML,<br><br> CSS, and JavaScript</p>
+      <button style="background-color: #000;color: #eee;">FROM $49</button>
+    </div><br><br>
+    <div class="card5">
+      <img src="./img5.svg" alt=""><br><br>
+      <p  style="color: gray;">Medium • 10 Classes • 150 Students</p><br>
+      <h2>Streamline Your CSS Workflow</h2><br>
+      <p  style="color: gray;">Our Tailwind CSS Introduction course <br><br> teaches you how to use this utility-first <br><br> CSS framework to streamline your <br><br> workflow, saving you time.</p>
+      <button style="background-color: #000;color: #eee;">FROM $99</button>
+    </div><br><br>
+    <div class="card6">
+      <img src="./img6.svg" alt=""><br><br>
+      <p  style="color: gray;">Medium • 33 Classes • 690 Students</p><br>
+      <h2>Master Backend Development</h2><br>
+      <p  style="color: gray;">Dream of becoming a backend <br><br> developer? Our intensive one-month <br><br> Node.js course is your fast track to <br><br> achieving that goal.</p><br>
+      <button style="background-color: #000;color: #eee;">FROM $299</button>
+    </div>
+  </div>
+  
+  
+  <img src="./imaage2.svg" alt="" style="width:600px; height: 500px;margin-top: 600px; margin-left: 70px;">
+  <div class="left">
+    <h4 style="color: blue;">ONLINE COURSE</h4><br><br>
+    <h1>Full-Stack Web Development</h1><br><br>
+    <p  style="color: gray;">Become a versatile developer by combining frontend and backend skills. <br>Build complete web applications from start to finish.</p><br><br>
+    <ul type="circle"  style="color: gray;">International course collection in 10 languages</ul>
+    <ul type="circle"  style="color: gray;">Certified include</ul>
+    <div class="otto1"><img src="./otto.jpg" alt="" style="border-radius: 1500px; width:50px"></div>
+    
+    <div class="otto">
+      <h5>Otto Gonzalez</h5>
+      <p  style="color: gray;">Senior Designer @company.com</p>
+    </div>
+
+  </div>
+  <div class="text4" style="margin-bottom: 150px;margin-top: -150px;">
+    <h1 style="margin-left: 500px;">Upcoming Events</h1>
+    <p style="color: gray;margin-left: 450px;">Join our web development events designed to share</p>
+    <p  style="color: gray;margin-left: 480px;">insights, trends, and real-world experiences.</p>
+  </div>
+  <div class="im" style="margin-top: -70px;">
+    <div class="im1">
+      <img src="./im1.svg" alt=""><br>
+      <h3>Future of Web Development: <br> Trends and Innovations</h3><br>
+      <p  style="color: gray;">Discover the latest trends and <br> innovations shaping the future of <br> web development.</p><br>
+      <button style="background-color: #000; color: #eee; border-radius: 5px;">REGISTER FOR FREE</button>
+    </div>
+    <div class="im2">
+      <img src="./im2.svg" alt=""><br>
+      <h3>WebDev Pro Code-a-Thon: <br>Build a Responsive Website</h3><br>
+      <p  style="color: gray;">Participants will have 48 hours to <br>create a responsive website from <br>scratch using HTML, CSS, and <br> JavaScript.</p><br>
+      <button style="background-color: #000; color: #eee; border-radius: 5px;">REGISTER FOR FREE</button>
+    </div>
+    <div class="im3">
+      <img src="./im3.svg" alt=""><br>
+      <h3>Ask the Experts: <br> Frontend Web Development</h3><br>
+      <p  style="color: gray;">Join our live Q&A session with our  <br>experienced instructors. Get <br> answers to your queries, insights <br> into best practices.</p><br>
+      <button style="background-color: #000; color: #eee; border-radius: 5px;">GET TICKET</button>
+    </div>
+    <div class="im4">
+      <img src="./im4.svg" alt=""><br>
+      <h3>Web Accessibility:  <br>Building Inclusive Websites</h3><br>
+      <p style="color: gray;">Industry experts will discuss the  <br>importance of inclusive design and  <br>share strategies for creating  <br>websites.</p><br>
+      <button style="background-color: #000; color: #eee; border-radius: 5px;">GET TICKET</button>
+    </div>
+  </div>
+  
+  <div class="text5" style="margin-top: 100px;margin-bottom: 100px;">
+    <h1 style="margin-left: 450px;">What Our Students Are Saying</h1><br>
+    <p style="margin-left: 400px; color: gray;">Our mission is to empower individuals with the knowledge and skills they need to</p>
+    <p  style="margin-left: 430px; color: gray;">succeed in the world of web development. But don't just take our word for it.</p>
+  </div>
+  <div class="rating" style="margin-top: 100px; margin-left: 200px;">
+    <div class="jessica" >
+      <img src="./jessica.jpg" alt="" style="width: 70px; border-radius: 500px;">
+      <h3>Jessica Devis</h3><br>
+      <h5>Web Developer @ MARKETING <br> DIGITAL LTD.</h5><br><br>
+      <p style="color: gray;">"The instructors are top-notch, <br> and the hands-on approach to <br>learning is incredibly effective."</p>
+      <img src="./star.jpeg" alt="" style="width: 120px;">
+    </div>
+    <div class="otto" >
+      <img src="./otto.jpg" alt="" style="width: 70px; border-radius: 500px;">
+      <h3>Linde Michel</h3><br>
+      <h5>Web Developer @ APPLE INC</h5><br><br>
+      <p style="color: gray;">"I went from knowing nothing <br> about web development to <br>landing my dream job as a <br> frontend developer."</p>
+      <img src="./star.jpeg" alt="" style="width: 120px;">
+    </div>
+    <div class="misha">
+      <img src="./misha.jpg" alt="" style="width: 70px; border-radius: 500px;">
+      <h3>Misha Stam</h3><br>
+      <h5>Web Developer @ APPLE INC.</h5><br><br>
+      <p style="color: gray;">"The courses are structured <br> well, and the projects helped  <br>me build a strong portfolio."</p>
+      <img src="./star.jpeg" alt="" style="width: 120px;">
+
+    </div>
+  </div>
+  <div class="community" style="margin-top: 100px;">
+    <h3  style="color: gray; margin-left: 500px;">AWESOME COMMUNITY</h3><br><br>
+    <h1 style="margin-left: 400px;">Trusted by over 200+ Companies</h1><br><br>
+    <div class="logo" style="margin-left: 200px; color: gray;">
+      <img src="./logo-coinbase.svg" alt="" style="width:150px;color: gray; ">
+      <img src="./logo-spotify.svg" alt="" style="width:150px;color: gray;">
+      <img src="./logo-pinterest.svg" alt="" style="width:150px;color: gray;">
+      <img src="./Google_2015_logo.svg" alt="" style="width:150px;color: gray;">
+      <img src="./logo-amazon.svg" alt="" style="width:150px;color: gray;">
+    </div><br><br>
+    <img src="./logo-netflix.svg" alt="" style="width:150px; margin-left: 550px;color: gray;">
+  </div><br><br><br><br>
+
+  <div class="last">
+    <div class="company">
+      <h3>company</h3><br>
+      <p style="color: gray;">About Us</p><br>
+      <p style="color: gray;">Careers</p><br>
+      <p style="color: gray;">Premium Tools</p><br>
+      <p style="color: gray;">Blog</p><br>
+    </div style="color: gray;">
+    <div class="pages">
+      <h3>Pages</h3><br>
+      <p style="color: gray;">Login</p><br>
+      <p style="color: gray;">Register</p><br>
+      <p style="color: gray;">Add List</p><br>
+      <p style="color: gray;">Contact</p><br>
+    </div>
+    <div class="legal">
+      <h3>Legal</h3><br>
+      <p style="color: gray;">Terms</p><br>
+      <p style="color: gray;">Privacy</p>
+      <p style="color: gray;">Team</p><br>
+      <p style="color: gray;">About Us</p><br>
+    </div>
+    <div class="form">
+      <h3>Subscribe</h3><br>
+      <p style="color: gray;">Get access to subscriber exclusive deals and be the <br> first who gets informed about fresh sales.</p><br>
+      <p style="color: gray;">Your Email</p><br>
+      <input type="text" placeholder="mail"><button style="background-color: #000;color: #eee;">Button</button>
+    </div>
+  </div>
+  <p style="margin-left: 350px;margin-top: 100px; color: gray;">© 2025 Made with Material Tailwind by Creative Tim | Distributed By ThemeWagon</p>
+
+
+    
+
+    
+
+
+    
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"/>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./sap.js"></script>
+
+</body>
+</html>
